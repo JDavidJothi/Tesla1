@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tesla</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+body{
+background-color: lightblue;
+}
+h1{
+color:white;
+background-color:DodgerBlue;
+padding:5px;
+text-align: center;
+}
+p{
+background-color:Tomato;
+font-family: verdana;
+font-size: 20px;
+border-style: dotted;
+}
+p.one
+{
+border-style:solid;
+border-width:5px;
+}
+p.two
+{
+    border-style: solid;
+    border-width: 20px 5px;
+}
+#para1{
+text-align: center;
+color: red;
+}
+* {
+text-align:center;
+}
+.dashed
+{
+    border-style:dashed;
+}
+.solid
+{
+    border-style: solid;
+}
+.note
+{
+    color: blue;
+}
+
+.fridge
+{
+    color: red;
+}
+
+.mouse
+{
+    background-color: powderblue;
+}
+
+p.four
+{
+    border-style: solid;
+    border-width: 5px 20px;
+}
+
+p.five
+{
+    border-style: solid;
+    border-width: 20px 5px;
+}
+
+p.six
+{
+    border-style: solid;
+    border-width: 25px 10px 4px 35px;
+}
+</style>
+</head>
+<body>
+<h1>Write Your First Heading</h1>
+<p>Write your First Paragraph</p>
+<h1>This is heading 1</h1>
+<p>This is paragraph</p>
+<p>This is another paragraph</p>
+<h2>This is heading 2</h2>
+<a href="http://www.tesla.com">This is a link</a>
+<h3>This is heading 3</h3>
+<p id="para1">This is Paragraph 3</p>
+<h2>What Can JavaScript Do?</h2>
+<p id="demo">JavaScript</p>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+<img src="C:\Users\hp\OneDrive\Desktop\TESLA\Tesla_logo.png" alt="Tesla" width="104" height="142">
+<p style="color:DodgerBlue;">Hello World</p>
+<p style="color:MediumSeaGreen;">Good Work</p>
+<h2>What can JavaScript do?</h2>
+<p id="para2">JavaScript can change the style of a HTML element</p>
+<button type="button" onclick="document.getElementById('para2').style.fontSize='35px'">Click Me!</button>
+<h1>Tesla is a car company</h1>
+<p>Tesla is a car that drives in electricity</p>
+<p>Tesla was founded by <br>Elon Musk</p>
+<a href="https://www.tesla.com">Tesla</a>
+<h1 style="color:Tomato;">Tesla is a electric car</h1>
+<p style="color:DodgerBlue;">Tesla is a good car</p>
+<p style="color:MediumSeaGreen">Tesla drives in Electric</p>
+<h2>Tesla is in USA</h2>
+<p id="current">JavaScript can hide HTML elements</p>
+<button type="button" onclick="document.getElementById('current').style.display='none'">Click Me!</button>
+<img src="C:\Users\hp\OneDrive\Desktop\TESLA\Tesla_logo.png" alt="Tesla" width="104" height="142">
+<p style="color:blue">This is a Green Paragraph</p>
+<p id="main"></p>
+<h1 style="border: 2px solid Tomato;">Tesla</h1>
+<h1 style="border: 2px solid DodgerBlue;">Tesla is a car company</h1>
+<h1 style="border: 2px solid Violet;">Tesla is a electric car</h1>
+<p id="state"></p>
+<p><b>Tesla</b></p>
+<p><i>Tesla</i></p>
+<p><sub>Tesla</sub></p>
+<p><sup>Tesla</sup></p>
+<p id="menu"></p>
+<h1 style="background-color:rgb(255,0,0);">Artificial Intelligence</h1>
+<h1 style="background-color:rgb(255,99,71);">Model 3</h1>
+<p id="nature"></p>
+<h1 style="background-color:rgb(60,60,60);">Tesla</h1>
+<p class="one">Tesla</p>
+<p id="car1">Tesla</p>
+<h1 style="background-color:rgba(255,99,71,1);">Tesla</h1>
+<h1 style="background-color:#ff0000">Tesla</h1>
+<h1 style="background-color:#404040;">Tesla transmission</h1>
+<p class="dashed">Tesla</p>
+<p id="sam_one">Tesla Model 3</p>
+<h1 style="background-color:hsl(0, 100%, 50%)">Tesla</h1>
+<p class="solid">Tesla</p>
+<p id="variable"></p>
+<h1 style="color:blue;">Tesla</h1>
+<p style="color:red">Tesla</p>
+<p class="two">Tesla</p>
+<p id="charger"></p>
+<h1 class="note">Tesla</h1>
+<p class="fridge">Tesla is AI</p>
+<p class="mouse">Tesla is AI.</p>
+<p class="four">Tesla is AI.</p>
+<p class="five">Tesla is AI.</p>
+<p class="six">Tesla is AI.</p>
+<p id="tv"></p>
+<h1 class="book">Tesla AI</h1>
+<p class="photo">Tesla is a electric car company</p>
+<p class="eleven">Tesla is only AI</p>
+<p class="twelve">Tesla is electric company.</p>
+<p id="clock"></p>
+<h1 class="paper">Tesla</h1>
+<p class="shirt">Tesla is AI</p>
+<h2>Individual Border Sides</h2>
+<p class="brd_sides">2 different border styles</p>
+<h1>1) JavaScript Variables</h1>
+<p>If you re-declare a JavaScript variable, it will not lose its value.</p>
+<p id="wire"></p>
+<h1>HTML Links</h1>
+<p><a href="https://www.tesla.com/">Visit Tesla</a></p>
+<h1 class="Heading1">Tesla Background color</h1>
+<p id="card"></p>
+</body>
+<script>
+    document.getElementById('main').innerHTML = "My First JavaScript";
+    document.write('Hello JavaScript by JavaScript');
+    document.write('JavaScript is a simple language for javatpoint learners');
+    var x = 5;
+    var y = 6;
+    var z = x + y;
+    document.getElementById('state').innerHTML = 'The value of z is: ' + z;
+    let a = 10;
+    let b = 20;
+    let c = a + b;
+    x1 = 5;
+    y1 = 6;
+    z1 = x1 + y1;
+    const price1 = 5;
+    const price2 = 6;
+    let total = price1 + price2;
+    document.getElementById('car1').innerHTML = 'The total is: ' + total;
+    document.getElementById('nature').innerHTML = 'The value of z1 is: ' + z1;
+    document.getElementById('menu').innerHTML = 'The value of c is: ' + c;
+    const pi = 3.14;
+    let person = 'John Doe';
+    let answer = 'Yes I am!';
+    document.getElementById('sam_one').innerHTML = pi + "<br>" + person + "<br>" + answer;
+    let carName = "Tesla";
+    document.getElementById('variable').innerHTML = carName;
+    let person1 = "John Doe", carName1 = "Volvo", price = 200;
+    document.getElementById('charger').innerHTML = carName1;
+    
+    let person2 = "John Doe",
+    carName2 = "Tesla",
+    price3 = 1000000;
+    document.getElementById('tv').innerHTML = carName2;
+
+    let carName3;
+    document.getElementById('clock').innerHTML = carName3;
+
+    var carName4 = "Tesla";
+    var carName4;
+    document.getElementById('wire').innerHTML = carName4;
+
+    let x2 = 5 + 2 + 3;
+    document.getElementById('card').innerHTML = x2;
+    </script>
+</html>    
+
+----------------------------css----------------------------
+
+.book
+{
+    color: blue;
+}
+.photo
+{
+    color:white;
+}
+p.eleven
+{
+    border-style:solid;
+    border-color:red;
+}
+p.twelve
+{
+    border-style:solid;
+    border-color:green;
+}
+.paper
+{
+    color: blue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:100%;
+}
+.shirt
+{
+    color:red;
+    font-family:'Courier New', Courier, monospace;
+    font-size:160%;
+}
+.brd_sides
+{
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+}
+.Heading1
+{
+    background-color: green;
+}
+
+-----------------------------------------------------PYTHON-------------------------------------------------------
+
+x_1 = 5
+y_1 = "John"
+print(x_1)
+print(y_1)
+
+x_2 = 4
+x_2 = "Sally"
+print(x_2)
+
+x_3 = str(3)
+y_3 = int(3)
+z_3 = float(3)
+
+x_4 = 5
+y_4 = "John"
+print(type(x_4))
+print(type(y_4))
+
+x_5 = "John"
+
+x_5 = 'John'
+
+print(x_5)
+
+x_6 = 5
+y_6 = "John"
+print(x_6)
+print(y_6)
+
+x_7 = 4
+x_7 = "Sally"
+print(x_7)
+
+x_8 = str(3)
+y_8 = int(3)
+z_8 = float(3)
+
+x_9 = 5
+y_9 = "John"
+print(type(x_9))
+print(type(y_9))
+
+x_10 = "John"
+
+x_10 = 'John'
+
+a_1 = 4
+A_1 = "Sally"
+print(a_1)
+
+x_10 = "John"
+x_11 = "John"
+_my_var = "John"
+myVar = "John"
+x_12 = "John"
+x_13 = "John"
+print(x_10)
+print(x_11)
+print(_my_var)
+print(myVar)
+print(x_12)
+print(x_13)
+
+x_14, y_14, z_14 = "Orange", "PineApple", "Apple"
+print(x_14)
+print(y_14)
+print(z_14)
+
+fruits = ["apple", "banana", "cherry"]
+x_15, y_15, z_15 = fruits
+print(x_15)
+print(y_15)
+print(z_15)
+
+x_16 = "Python is awesome"
+print(x_16)
+
+x_17 = "Python"
+y_17 = "is"
+z_17 = "awesome"
+print(x_17, y_17, z_17)
+
+x_18 = "awesome"
+
+
+def myfunc():
+    print("Python is " + x_18)
+
+
+myfunc()
+
+x_19 = "awesome"
+
+
+def myfunc1():
+    x_20 = "fantastic"
+    print("1) Python is "+x_20)
+
+
+myfunc1()
+
+
+print("2) Python is "+x_19)
+
+
+global h
+
+
+def myfunc2():
+    global h
+    h = "Marvellous"
+
+
+myfunc2()
+
+
+print("3) Python is " + h)
+
+i = "Awesome"
+
+
+def myfunc3():
+    global i
+    i = "Fantastic"
+
+
+myfunc3()
+
+print("4) Python is: "+i)
+
+x_20 = 5
+print(type(x_20))
+
+x_21 = "Hello World"
+
+print(x_21)
+
+print(type(x_21))
+
+-----------------------------------------------------SQL---------------------------------------------------------
+
+CREATE TABLE EmployeePortal(ID INT,Employee_Name VARCHAR(50),Employee_EmailID VARCHAR(50),Address VARCHAR(150));
+
