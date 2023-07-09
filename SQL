@@ -1,0 +1,55 @@
+SELECT * FROM tblEmployees;
+
+SELECT DISTINCT NAME, EMAIL FROM tblEmployees;
+
+SELECT * FROM tblEmployees WHERE Age = 10;
+
+SELECT * FROM tblEmployees WHERE AGE > 5;
+
+SELECT * FROM tblEmployees WHERE Age <> 5;
+
+SELECT * FROM tblEmployees WHERE Age != 5;
+
+SELECT * FROM tblEmployees WHERE Age = 25 OR Age = 10;
+
+SELECT * FROM tblEmployees WHERE Age IN(10,25);
+
+SELECT * FROM tblEmployees WHERE Age BETWEEN 0 AND 100;
+
+SELECT * FROM tblEmployees WHERE NAME LIKE 'C%';
+
+SELECT * FROM tblEmployees WHERE EMAIL LIKE '%@%';
+
+SELECT * FROM tblEmployees WHERE EMAIL NOT LIKE '%@%';
+
+SELECT * FROM tblEmployees WHERE EMAIL LIKE '_@_.com';
+
+SELECT * FROM tblEmployees WHERE NAME LIKE '[MST]%';
+
+SELECT * FROM tblEmployees WHERE NAME LIKE '[^MST]%';
+
+SELECT * FROM tblEmployees WHERE (GenderId = 1 OR GenderId = 2) AND Age > 5;
+
+SELECT * FROM tblEmployees ORDER BY NAME;
+
+SELECT * FROM tblEmployees ORDER BY NAME DESC;
+
+SELECT * FROM tblEmployees ORDER BY NAME DESC, AGE ASC;
+
+SELECT TOP 10 * FROM tblEmployees;
+
+SELECT TOP 2 * FROM tblEmployees;
+
+SELECT TOP 10 NAME,EMAIL FROM tblEmployees;
+
+SELECT TOP 2 NAME,EMAIL FROM tblEmployees;
+
+SELECT TOP 2 * FROM tblEmployees;
+
+SELECT TOP 1 PERCENT * FROM tblEmployees;
+
+SELECT TOP 50 PERCENT * FROM tblEmployees;
+
+SELECT * FROM tblEmployees ORDER BY AGE DESC;
+
+SELECT TOP 1 * FROM tblEmployees ORDER BY AGE DESC;
